@@ -1,0 +1,12 @@
+._*
+.DS_Store
+thumbs.db
+desktop.ini
+
+.vscode/
+
+target/
+
+.settings/
+.classpath
+.project

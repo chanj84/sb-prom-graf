@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  service:
+    container_name: 'service'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # image: service:latest
+    ports:
+      - 8080:8080
+    depends_on:
+      - grafana
+      - prometheus
+  grafana:
+    container_name: 'grafana'
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    depends_on:
+      - prometheus
+  prometheus:
+    container_name: 'prometheus'
+    build:
+      context: .
+      dockerfile: Dockerfile-prometheus
+    # image: prom/prometheus
+    ports:
+      - 9090:9090
