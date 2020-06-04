@@ -16,9 +16,8 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <java.version>1.8</java.version>
+    <java.version>14</java.version>
     <org.springframework.boot.version>2.3.0.RELEASE</org.springframework.boot.version>
-    <io.prometheus.version>0.8.1</io.prometheus.version>
   </properties>
 
   <dependencies>
@@ -40,28 +39,6 @@
       <groupId>io.micrometer</groupId>
       <artifactId>micrometer-registry-prometheus</artifactId>
     </dependency>
-    <!--
-    <dependency>
-      <groupId>io.prometheus</groupId>
-      <artifactId>simpleclient</artifactId>
-      <version>${io.prometheus.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>io.prometheus</groupId>
-      <artifactId>simpleclient_hotspot</artifactId>
-      <version>${io.prometheus.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>io.prometheus</groupId>
-      <artifactId>simpleclient_httpserver</artifactId>
-      <version>${io.prometheus.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>io.prometheus</groupId>
-      <artifactId>simpleclient_pushgateway</artifactId>
-      <version>${io.prometheus.version}</version>
-    </dependency>
-    -->
   </dependencies>
 
   <build>
